@@ -12,7 +12,7 @@ function EmployeeDetails({ employee, closeModal }) {
       <p><strong>Имя:</strong> {employee.name}</p>
       <p><strong>Должность:</strong> {employee.position}</p>
       <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
-          <p><strong>Детали:</strong> <span style={{ whiteSpace: 'pre-line' }}>{employee.details}</span></p>
+          <p><strong>Детали:</strong> <br /><span style={{ whiteSpace: 'pre-line' }}>{employee.details}</span></p>
       </div>
       <button onClick={closeModal} className='button button-delete'>Закрыть</button>
     </div>

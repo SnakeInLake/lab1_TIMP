@@ -11,10 +11,10 @@ function EmployeeAdd({ onEmployeeAdded, closeModal }) {
 
     const validationErrors = {};
     if (!name.trim()) {
-      validationErrors.name = 'Name is required';
+      validationErrors.name = 'Имя обязательно для добавления';
     }
     if (!position.trim()) {
-      validationErrors.position = 'Position is required';
+      validationErrors.position = 'Должность обязательна для добавления';
     }
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
