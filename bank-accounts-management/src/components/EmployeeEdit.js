@@ -57,7 +57,7 @@ function EmployeeEdit({ employee, onEmployeeUpdated, closeModal }) {
 
     return (
         <div>
-            <h2>Edit Employee</h2>
+            <h2>Изменить сотрудника</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Имя:</label>

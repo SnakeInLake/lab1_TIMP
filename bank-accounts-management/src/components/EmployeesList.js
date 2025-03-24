@@ -106,7 +106,7 @@ function EmployeesList() {
       };
       const handleDelete = (employeeId) => {
         // Спрашиваем подтверждение перед удалением
-        if (window.confirm("Are you sure you want to delete this employee?")) {
+        if (window.confirm("Вы уверены, что хотите удалить данного сотрудника?")) {
           // Если пользователь нажал "OK", отправляем запрос на удаление
           fetch(`http://localhost:5000/api/employees/${employeeId}`, {
             method: 'DELETE',
@@ -162,13 +162,13 @@ function EmployeesList() {
               <td>{employee.position}</td>
               <td>
                 <button className="button button-details" onClick={() => openDetailsModal(employee)}>
-                Details
+                Детали
                 </button>
                 <button className="button button-edit" onClick={() => openEditModal(employee)}>
-                Edit
+                Изменить
                 </button>
                 <button className="button button-delete" onClick={() => handleDelete(employee.id)}> {/* Добавили кнопку Delete */}
-                    Delete
+                    Удалить
                 </button>
             </td>
             </tr>
